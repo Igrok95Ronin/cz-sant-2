@@ -47,41 +47,71 @@ $title = $text . ' ' . $city;
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 first-section-container">
-                        <div class="title">
+                        <div class="title my-5">
                             <h1 class="title__h1">
                                 INSTALATÉR PRAHA
                             </h1>
                         </div>
                         <div class="installation">
-                            <div class="installation-bathroom">
-                                <img class="installation__img" src="assets/img/1ico01b-mini.png" alt="">
+                            <div class="installation-bathroom instalattion-bathroom--width">
+                                <div class="installation__img"></div>
                                 <p class="instalattion__name">
                                     UCPANÝ ZÁCHOD/PISOÁR
                                 </p>
                             </div>
-                            <div class="installation-bathroom">
-                                <img class="installation__img" src="assets/img/2ico02b-mini.png" alt="">
+                            <div class="installation-bathroom instalattion-bathroom--width">
+                                <div class="installation__img"></div>
                                 <p class="instalattion__name">
                                     UCPANÝ DŘEZ/UMYVADLO
                                 </p>
                             </div>
-                            <div class="installation-bathroom">
-                                <img class="installation__img" src="assets/img/3ico03b-mini.png" alt="">
+                            <div class="installation-bathroom instalattion-bathroom--width">
+                                <div class="installation__img"></div>
                                 <p class="instalattion__name">
                                     UCPANÝ ODPAD VE VANĚ
                                 </p>
                             </div>
-                            <div class="installation-bathroom">
-                                <img class="installation__img" src="assets/img/4ico04b-mini.png" alt="">
+                            <div class="installation-bathroom instalattion-bathroom--width">
+                                <div class="installation__img"></div>
                                 <p class="instalattion__name">
                                     SERVISNÍ SLUŽBY
                                 </p>
                             </div>
                         </div>
-                        <div class="title-description">
-                            <p class="title-desctiption__text">
+                        <div class="description">
+                            <p class="desctiption__text mt-4">
                                 Trápí vás ucpané odpady ve vaší domácnosti, kanceláři nebo třeba restauraci? Potřebujete je co nejrychleji uvolnit? V tom případě neváhejte a ozvěte se nám. Instalatéři z našeho týmu za sebou mají více než 12 let praxe. Za tu dobu jsme se setkali s nejrůznějšími problémy – proto se můžeme zaručit, že budete s výsledky naší práce spokojení. Pracujeme kvalitně, rychle, spolehlivě a za příjemné ceny. A co víc? Kromě čištění odpadů mechanickou cestou s profesionálním nářadím vám nabízíme také další instalatérské práce. A nejen to. Můžeme vám nabídnout také pokládku podlahového topení, nemluvě o drobných zednických pracích a rekonstrukci koupelny.
                             </p>
+                            <div class="forms mt-4">
+
+                                <form id="jq_form">
+                                    <h6 class="forms__h6 text-center">Kontaktujte nás a zabezpečte si naše zpětné volání<h6>
+                                    <div class="mb-3 mt-4">
+                                        <input class="form-control" placeholder="Jméno" name="jq_name" type="text">
+                                        <div id="jq_name" style="font-size:15px;color:red;padding-top:2px;display:none">Toto je požadované pole.</div>
+                                    </div>
+                                    <div class="my-3">
+                                        <input class="form-control" placeholder="Telefon" name="jq_phone" type="text">
+                                        <div id="jq_phone" style="font-size:15px;color:red;padding-top:2px;display:none">Toto je požadované pole.</div>
+                                    </div>
+                                    <div class="my-3">
+                                        <input class="form-control" placeholder="Ulice" name="jq_street" type="text">
+                                    </div>
+                                    <div class="my-3">
+                                        <input class="form-control" placeholder="PSČ / město" name="jq_city" type="text">
+                                    </div>
+                                    <div class="my-3">
+                                        <input class="form-control" placeholder="E-Mail" name="jq_email" type="text"> 
+                                    </div>
+                                    <div class="my-3">
+                                        <textarea rows="5" class="form-control" name="jq_text" placeholder="Zprávy"></textarea>
+                                        <div id="jq_text" style="font-size:15px;color:red;padding-top:2px;display:none">Toto je požadované pole.</div>
+                                    </div>
+                                    <input class="btn text-uppercase fw-bold mb-1 px-5 py-2 forms__buttom" type="submit" id="jq_submit" value="Poslat"> 
+                                    <div id="jq_success" style="display:none">Díky za vaši zprávu. Byla odeslána.</div>
+                                </form> 
+
+                            </div>
                         </div>
                     </div>                 
                 </div>            

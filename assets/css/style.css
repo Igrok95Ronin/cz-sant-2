@@ -46,13 +46,194 @@ body {
   margin-top: 30px;
 }
 
+.first-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title__h1 {
+  font-size: clamp(25px, 5vw, 32px);
+  color: #333;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.title__h1::after {
+  content: "";
+  position: absolute;
+  margin-top: 45px;
+  left: 50%;
+  height: 2px;
+  width: 50px;
+  margin-left: -25px;
+  background: #1bbde8;
+}
+
+.installation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.installation-bathroom {
+  width: calc(25% - 10px);
+  text-align: center;
+}
+.installation-bathroom:hover {
+  background: #1bbde8 url(../img/1hover.png) no-repeat;
+  background-position: 50% 38%;
+  z-index: 20;
+  color: #fff;
+}
+.installation-bathroom:nth-child(1) {
+  background: url(../img/1ico01b-mini.png) no-repeat;
+  background-position: center;
+}
+.installation-bathroom:nth-child(1):hover {
+  background: #1bbde8 url(../img/1hover.png) no-repeat;
+  background-position: 50%;
+}
+.installation-bathroom:nth-child(1):hover .instalattion__name {
+  color: #fff;
+}
+.installation-bathroom:nth-child(2) {
+  background: url(../img/2ico02b-mini.png) no-repeat;
+  background-position: center;
+}
+.installation-bathroom:nth-child(2):hover {
+  background: #1bbde8 url(../img/2hover.png) no-repeat;
+  background-position: 50%;
+}
+.installation-bathroom:nth-child(2):hover .instalattion__name {
+  color: #fff;
+}
+.installation-bathroom:nth-child(3) {
+  background: url(../img/3ico03b-mini.png) no-repeat;
+  background-position: center;
+}
+.installation-bathroom:nth-child(3):hover {
+  background: #1bbde8 url(../img/3hover.png) no-repeat;
+  background-position: 50%;
+}
+.installation-bathroom:nth-child(3):hover .instalattion__name {
+  color: #fff;
+}
+.installation-bathroom:nth-child(4) {
+  background: url(../img/4ico04b-mini.png) no-repeat;
+  background-position: center;
+}
+.installation-bathroom:nth-child(4):hover {
+  background: #1bbde8 url(../img/4hover.png) no-repeat;
+  background-position: 50%;
+}
+.installation-bathroom:nth-child(4):hover .instalattion__name {
+  color: #fff;
+}
+
+.instalattion-bathroom--width {
+  margin-right: 10px;
+}
+.instalattion-bathroom--width:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.installation__img {
+  margin-top: 30px;
+  width: 100%;
+  height: 120px;
+}
+
+.instalattion__name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  margin-top: 10px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.desctiption__text {
+  max-width: 100%;
+  text-align: justify;
+  background: #1bbde8;
+  padding: 30px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.forms {
+  width: 75%;
+  margin: auto;
+}
+
+.forms__h6 {
+  font-size: clamp(23px, 3vw, 30px);
+  color: #000;
+  font-weight: 700;
+}
+
+.forms__buttom {
+  background-color: #1bbde8;
+  color: #fff;
+}
+.forms__buttom:hover {
+  background-color: #07acda;
+  color: #fff;
+}
+
 @media (max-width: 992px) {
   .lists--padding {
     padding: 50px 0;
+  }
+
+  .installation-bathroom {
+    width: calc(50% - 10px);
+    text-align: center;
+  }
+
+  .instalattion-bathroom--width {
+    margin-right: 10px;
+  }
+  .instalattion-bathroom--width:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 @media (max-width: 767px) {
   .logo {
     display: none;
+  }
+
+  .forms {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .installation-bathroom {
+    width: calc(100% - 10px);
+    text-align: center;
+  }
+
+  .instalattion-bathroom--width {
+    margin-right: 10px;
+  }
+  .instalattion-bathroom--width:nth-child(1n) {
+    margin-right: 0px;
   }
 }
