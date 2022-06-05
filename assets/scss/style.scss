@@ -1,0 +1,90 @@
+$prymori-color: #1bbde8;
+@mixin title {
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body{
+    outline: 1px solid red;
+    margin: auto;
+    padding: 0;
+    font: 15px Helvetica,Arial,sans-serif;
+    max-width: 1920px;
+    min-width: 360px;
+    color: #7a7a7a;
+}
+
+.header {
+    background: #01a6db url(../img/slider-bg.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lists {
+}
+.lists__list { 
+    color: #fff;
+    font-size: clamp(16px,2vw,25px);
+    line-height: clamp(30px,3vw,40px);
+    padding: 5px 0 5px 40px;
+    text-transform: uppercase;
+    background: url(../img/slider-znak.png) 0 14px no-repeat;
+}
+.logo {
+    max-width: 33.333%;
+}
+.logo__img {
+    max-width: 100%;
+    margin-bottom: -30px;
+    margin-top: 30px;
+}
+// 
+.first-section {
+}
+.container-fluid {
+}
+.row {
+}
+.col-12 {
+}
+.first-section-container {
+}
+.title {
+}
+.title__h1 {
+}
+.installation {
+}
+.installation-bathroom {
+}
+.installation__img {
+}
+.instalattion__name {
+}
+.title-description {
+}
+.title-desctiption__text {
+}
+
+
+
+@media (max-width: 992px) {
+    .lists--padding {
+        padding: 50px 0;
+    }
+
+}
+@media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
+}
