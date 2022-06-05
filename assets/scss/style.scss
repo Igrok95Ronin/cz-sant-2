@@ -39,8 +39,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.lists {
-}
 .lists__list { 
     color: #fff;
     font-size: clamp(16px,2vw,25px);
@@ -58,13 +56,9 @@ body{
     margin-top: 30px;
 }
 // 
-.first-section {
-}
 .first-section-container {
     max-width: 1200px;
     margin: 0 auto;
-}
-.title {
 }
 .title__h1 {
     @include title;
