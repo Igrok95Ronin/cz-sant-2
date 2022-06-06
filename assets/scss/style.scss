@@ -224,8 +224,6 @@ body{
     }
 }
 //@at-root
-.third-block {
-}
 .third-block-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -284,16 +282,7 @@ body{
     &:nth-child(6)::before {
         content: url(../img/66sluzba-8-big.png);
     }
-
 }
-/* .description-services--width-margin {
-    margin-right: 20px;
-    margin-top: 60px;
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
-} */
-
 .description-services__img {
     max-width: 100%;
     display: flex;
@@ -325,7 +314,25 @@ body{
 .description-services__descriptions--position-margin {
     margin-top: 30px;
     line-height: 25px;
-    // margin-left: 20px;
+}
+// 
+.fourth-block {
+    background-color: #f2f2f2;
+}
+.fourth-block-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.other-services {
+}
+.other-services__title {
+    @include title;
+}
+.other-services__description {
+    margin: 0;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 
@@ -407,11 +414,3 @@ body{
         
     }
 }
-
-
-
-/* @media (max-width: 1088px){
-    .description-services::before {
-        top: 120px;
-    }
-} */
