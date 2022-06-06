@@ -245,8 +245,8 @@ body {
   display: inline-block;
   background: url(../img/phone.png);
   background-size: contain;
-  height: 32px;
-  width: 32px;
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
 }
 .phone__number:hover {

@@ -4,8 +4,8 @@ $site_data      = json_decode(file_get_contents('http://templates.jquery.link/ap
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'INSTALATÉR'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -21,8 +21,6 @@ $title = $text . ' ' . $city;
     <title><?= $title ?></title>
 </head>
 <body>
-    
-    
         <!--Шапка сайта-->
         <header class="header">
             <div class="container-fluid">
@@ -41,7 +39,6 @@ $title = $text . ' ' . $city;
                 </div>            
             </div>
         </header>
-
         <!-- Раздел страницы-->
         <section class="first-section">
             <div class="container-fluid">
@@ -49,7 +46,7 @@ $title = $text . ' ' . $city;
                     <div class="col-12 first-section-container">
                         <div class="title my-5">
                             <h1 class="title__h1">
-                                INSTALATÉR PRAHA
+                            <?= $title ?>
                             </h1>
                         </div>
                         <div class="installation">
@@ -124,7 +121,7 @@ $title = $text . ' ' . $city;
                         <p class="second-section__info">V případě, že chcete využít naší havarijní služby, nebo se chcete domluvit na termínu naší návštěvy:</p>
                         <p class="second-section__call">VOLEJTE NA TELEFONNÍ ČÍSLO</p>
                         <p class="phone mt-4">
-                            <a class="phone__number" href="#">111222333</a>
+                            <a class="phone__number" href="<?= $phone_href ?>"><?= $phone_name ?></a>
                         </p>
                     </div>
                 </div>
@@ -197,7 +194,7 @@ $title = $text . ' ' . $city;
                                 <img class="gallery__img" src="assets/img/g6cisteni-odpadu-praha-3-600x600.jpg" alt="" >
                             </div>
                             <div class="gallery__buttom d-grid col-12 col-md-4 col-lg-3 m-auto mt-4">
-                                <a href="#" class="btn gallery__button-link py-2 fs-3 fw-bold">111222333</a>
+                                <a href="<?= $phone_href ?>" class="btn gallery__button-link py-2 fs-3 fw-bold"><?= $phone_name ?></a>
                             </div>
                         </div>
                     </div>
